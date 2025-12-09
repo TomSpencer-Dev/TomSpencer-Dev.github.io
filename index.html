@@ -1,189 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- Head -->
-    <head>
-        <title>TS Web Development Portfolio</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
-    </head>
 
-    <!-- Body -->
-    <body class="Background">
+<!-- Head -->
+
+<head>
+    <title>TS Web Development Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+</head>
+
+<!-- Body -->
+
+<body class="Background">
 
     <!-- Navbar -->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a onclick="openForm()" ondblclick="closeForm()">Contact</a><!-- This makes it so that our openForm runs when we  click Contact on the nav bar -->
-        </div>
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a onclick="openForm()"
+            ondblclick="closeForm()">Contact</a><!-- This makes it so that our openForm runs when we  click Contact on the nav bar -->
+    </div>
 
     <!-- Home -->
-        <div id="Home">
+    <div id="Home">
         <br><!-- Breaks inserted to add space between navbar and the first heading -->
         <br>
 
-    <!-- Video -->
-            <video autoplay muted loop id="Futuristic_Video"><!-- Makes the video play automatically, on a loop and with no sound -->
-                <source src="images/video/Futuristic.mp4" type="video/mp4">
-                <!-- Display message if video fails to run -->
-                Your browser does not support HTML5 video.<!-- Display message if video fails to run -->
-            </video>
-        </div>
+        <!-- Video -->
+        <video autoplay muted loop
+            id="Futuristic_Video"><!-- Makes the video play automatically, on a loop and with no sound -->
+            <source src="images/video/clouds.mp4" type="video/mp4">
+            <!-- Display message if video fails to run -->
+            Your browser does not support HTML5 video.<!-- Display message if video fails to run -->
+        </video>
+    </div>
 
-        <!-- Video text -->
-        <div class="Video_Text">
-            <h1 style="color: white;">Tom Spencer's Portfolio</h1>
-                <p class="center" style="color: white;">
-                    <strong>
-                        
-                            <q>We don't want to push our ideas on to customers, we simply want to make what they want.
-                            </q>
-                            <br> -Laura Ashley
-                            <br>
-                            <br> My name is Tom Spencer. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                            <br>
-                            <br> Thank you for stopping by and enjoy!
-                        
-                </strong>
-            </p>
-        </div>
+    <!-- Video text -->
+    <div class="Video_Text">
+        <h1 style="color: white;">Tom Spencer's Portfolio</h1>
+        <p class="center" style="color: white;">
+            <strong>
 
-        <!-- Slideshow section -->
-            <div id="Slideshow">
-                <div id="Slideshow_Background">
-                    <div id="Slideshow_Container">
-
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">1 / 5</div>
-                                <img class="Slide_Show_Images" src="images/Profile_Pic.jpg" alt="profile pic" style="width:100%">
-                                    <div class="text">I'm available to assist you on your project!</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">2 / 5</div>
-                                <img class="Side_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="Progamming Logos" style="width:100%">
-                                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, and JavaScript,</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">3 / 5</div>
-                                <img class="Slide_Show_Images" src="images/C_Sharp_and_Dot_NET.png" alt="Framework Logos" style="width:100%">
-                                    <div class="text">C#, .NET Framework, ASP.NET,</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">4 / 5</div>
-                            <img class="Slide_Show_Images" src="images/SQL_and_Database.jpg" alt="Database Logos" style="width:100%">
-                                <div class="text">back end development, databases and SQL.</div>
-                        </div>
-
-                        <div class="mySlides fade">
-                            <div class="Slide_Number">5 / 5</div>
-                                <img class="Slide_Show_Images" src="images/Coding_1.jpg" alt="coding pic" style="width:100%">
-                                    <div class="text">
-                                        <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
-                                    </div>
-                        </div>
-
-                            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-
-                    </div>
+                <q>We don't want to push our ideas on to customers, we simply want to make what they want.
+                </q>
+                <br> -Laura Ashley
                 <br>
+                <br> My name is Tom Spencer. Welcome to my portfolio website. On it, I will tell you about my background
+                and experience.
+                <br>
+                <br> Thank you for stopping by and enjoy!
 
-                    <div style="text-align:center">
-                        
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span>
+            </strong>
+        </p>
+    </div>
 
+    <!-- Slideshow section -->
+    <div id="Slideshow">
+        <div id="Slideshow_Background">
+            <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">1 / 5</div>
+                    <img class="Slide_Show_Images" src="images/Profile_Pic.jpg" alt="profile pic" style="width:100%">
+                    <div class="text">I'm available to assist you on your project!</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">2 / 5</div>
+                    <img class="Side_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="Progamming Logos"
+                        style="width:100%">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, and
+                        JavaScript,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 5</div>
+                    <img class="Slide_Show_Images" src="images/C_Sharp_and_Dot_NET.png" alt="Framework Logos"
+                        style="width:100%">
+                    <div class="text">C#, .NET Framework, ASP.NET,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">4 / 5</div>
+                    <img class="Slide_Show_Images" src="images/SQL_and_Database.jpg" alt="Database Logos"
+                        style="width:100%">
+                    <div class="text">back end development, databases and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="Slide_Number">5 / 5</div>
+                    <img class="Slide_Show_Images" src="images/Coding_1.jpg" alt="coding pic" style="width:100%">
+                    <div class="text">
+                        <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
                     </div>
                 </div>
+
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
+            <br>
 
+            <div style="text-align:center">
 
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
 
-
-        <!-- About section -->
-        <div class="Row" id="About">
-            <!-- Left colomn -->
-            <div class="Column_2">
-                <img src="images/tablet.png" alt="Device Pictures" class="images2">
-            </div>
-            
-            <!-- Right column -->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am a software developer who loves to code! When I am not coding, I enjoy being in nature with my dogs.
-                    <br>
-                    <br>
-                    I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and gained training and experience in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
-                </p>
-            </div>
-        </div>
-
-        <!-- GitHub section -->
-        <div class="Row" id="GitHub">
-            <!-- Left column -->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                    <p class="center">You can view my coding projects on my GitHub profile here:<br>
-                    <a  href="https://github.com/TomSpencer-Dev/Development_Portfolio" target="_blank">Tom Spencer - Developer Github</a></p>
-            </div>
-            <!-- Right column -->
-            <div class="Column_2">
-                <a href="https://github.com/TomSpencer-Dev/Development_Portfolio" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo" class="images2"></a>
             </div>
         </div>
     </div>
 
-        <!-- Contact section -->
-        <div id="Contact">
-            <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-            <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/f/mwkaorwa" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-                    <h1>Contact</h1>
-                        <label for="name"><b>Name</b></label>
-                            <input type="text" placeholder="Type your name here" name="name" required>
-                        <label for="phone"><b>Phone</b></label>
-                            <input type="text" placeholder="Enter your phone number here" name="phone">
-                        <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Type your email address here" name="email" required>
-                        <label for="message"><b>Messge</b></label>
-                            <input type="text" placeholder="Type your message here" name="message">
+
+
+
+    <!-- About section -->
+    <div class="Row" id="About">
+        <!-- Left colomn -->
+        <div class="Column_2">
+            <img src="images/tablet.png" alt="Device Pictures" class="images2">
+        </div>
+
+        <!-- Right column -->
+        <div class="Column_1">
+            <h1>About</h1>
+            <p>
+                I am a software developer who loves to code! When I am not coding, I enjoy being in nature with my dogs.
+                <br>
+                <br>
+                I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s
+                Software Developer Boot Camp, and gained training and experience in the following web and programming
+                languages: HTML, CSS, JavaScript, SQL, C# and more.
+                <br>
+                <br>I am a full-stack developer and would love to work with you on your project. <a
+                    href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!-- GitHub section -->
+    <div class="Row" id="GitHub">
+        <!-- Left column -->
+        <div class="Column_1">
+            <h1>GitHub</h1>
+            <p class="center">You can view my coding projects on my GitHub profile here:<br>
+                <a href="https://github.com/TomSpencer-Dev/Development_Portfolio" target="_blank">Tom Spencer -
+                    Developer Github</a>
+            </p>
+        </div>
+        <!-- Right column -->
+        <div class="Column_2">
+            <a href="https://github.com/TomSpencer-Dev/Development_Portfolio" target="_blank"><img
+                    src="images/GitHub.png" alt="GitHub Logo" class="images2"></a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/f/mwkaorwa" method="POST" class="form-container">
+                <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Messge</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
 
                 <button type="submit" class="btn">SUBMIT</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                    </form>
-                </div>
-            </div>
+            </form>
+        </div>
+    </div>
 
-        <!-- Footer section -->
-        <footer>
-            <p>
-                <p class="center">Tom Spencer Web Development | <a href="https://thomasspencer20345.wixsite.com/website" target="_blank">Blog</a></p>
-                <p class="center"><a href="https://www.facebook.com/TS-Development-101498318838772" target="_blank">Facebook</a>
-               |<a  href="https://www.linkedin.com/in/thomas-spencer-5211861b3" target="_blank">LinkedIn</a>
-               |<a  href="https://twitter.com/home" target="_blank">Twitter</a>
-               |<a  href="https://www.youtube.com/channel/UCjCcJYdpgluFCW5aA5t-pPQ" target="_blank">YouTube</a></p>
-               <br>
-            </p>
-        </footer>
+    <!-- Footer section -->
+    <footer>
+        <p>
+        <p class="center">Tom Spencer Web Development | <a href="https://thomasspencer20345.wixsite.com/website"
+                target="_blank">Blog</a></p>
+        <p class="center"><a href="https://www.facebook.com/TS-Development-101498318838772" target="_blank">Facebook</a>
+            |<a href="https://www.linkedin.com/in/thomas-spencer-5211861b3" target="_blank">LinkedIn</a>
+            |<a href="https://twitter.com/home" target="_blank">Twitter</a>
+            |<a href="https://www.youtube.com/channel/UCjCcJYdpgluFCW5aA5t-pPQ" target="_blank">YouTube</a></p>
+        <br>
+        </p>
+    </footer>
 
-        <!-- link to JavaScript document -->
-        
-        <script src="JS/main.js"></script>
-    
-    </body>
+    <!-- link to JavaScript document -->
+
+    <script src="JS/main.js"></script>
+
+</body>
+
 </html>
-
-
