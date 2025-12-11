@@ -454,12 +454,12 @@ img {
 }
 
 /* Center class hover effect - This only affects the quote, github link, and footer */
-.center:hover {
-    transition: transform 2s;
-    /*This makes the transform effect last 2 seconds */
-    transform: scale(1.1);
-    /* This makes the elements with clss "center increase in size by 1.1 when hovered over */
-}
+/* .center:hover {
+    transition: transform 2s; */
+/*This makes the transform effect last 2 seconds */
+/* transform: scale(1.1); */
+/* This makes the elements with clss "center increase in size by 1.1 when hovered over */
+/* } */
 
 /* Paragraph element hover effect */
 p:hover {
