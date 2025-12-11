@@ -637,3 +637,7 @@ h1.mail:after {
 footer a {
     text-decoration: none;
 }
+
+body {
+    cursor: url('../images/plane_cursor.svg'), auto;
+}
