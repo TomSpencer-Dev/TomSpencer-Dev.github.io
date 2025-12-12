@@ -5,6 +5,8 @@
 
 <head>
     <title>TS Web Development Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
@@ -18,10 +20,11 @@
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
         <a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
-        <a href="#About">About</a>
+        <a href="#Java">Java</a>
+        <a href="#React">React</a>
+        <a href="#Android">Android</a>
         <a href="#GitHub">GitHub</a>
-        <a onclick="openForm()"
-            ondblclick="closeForm()">Contact</a><!-- This makes it so that our openForm runs when we  click Contact on the nav bar -->
+        <a onclick="openForm()" ondblclick="closeForm()" href="#">Contact</a>
     </div>
 
     <!-- Home -->
@@ -80,13 +83,13 @@
         <div id="Slideshow_Background">
             <div id="Slideshow_Container">
 
-                <div class="mySlides fade">
+                <div class="mySlides myFade">
                     <div class="Slide_Number">1 / 5</div>
                     <img class="Slide_Show_Images" src="images/Profile_Pic.jpg" alt="profile pic" style="width:100%">
                     <div class="text">I'm available to assist you on your project!</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides myFade">
                     <div class="Slide_Number">2 / 5</div>
                     <img class="Side_Show_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="Progamming Logos"
                         style="width:100%">
@@ -94,21 +97,21 @@
                         JavaScript,</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides myFade">
                     <div class="Slide_Number">3 / 5</div>
                     <img class="Slide_Show_Images" src="images/C_Sharp_and_Dot_NET.png" alt="Framework Logos"
                         style="width:100%">
                     <div class="text">C#, .NET Framework, ASP.NET,</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides myFade">
                     <div class="Slide_Number">4 / 5</div>
                     <img class="Slide_Show_Images" src="images/SQL_and_Database.jpg" alt="Database Logos"
                         style="width:100%">
                     <div class="text">back end development, databases and SQL.</div>
                 </div>
 
-                <div class="mySlides fade">
+                <div class="mySlides myFade">
                     <div class="Slide_Number">5 / 5</div>
                     <img class="Slide_Show_Images" src="images/Coding_1.jpg" alt="coding pic" style="width:100%">
                     <div class="text">
@@ -137,28 +140,179 @@
 
 
 
-    <!-- About section -->
-    <div class="Row" id="About">
+    <!-- Java section -->
+    <div class="Row" id="Java">
         <!-- Left colomn -->
         <div class="Column_2">
-            <img src="images/tablet.png" alt="Device Pictures" class="images2">
+            <div id="carouselExampleIndicators_1" class="carousel slide h-100" data-ride="carousel">
+
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 h-100" src="images/IngomafyLanding.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/Ingomafy_About.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/Ingomafy_Userpage.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators_1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators_1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </a>
+            </div>
         </div>
 
         <!-- Right column -->
         <div class="Column_1">
-            <h1>About</h1>
+            <h1>Java Servlets</h1>
             <p>
-                I am a software developer who loves to code! When I am not coding, I enjoy being in nature with my dogs.
+                This was a group project that was completed with two other developers enrolled at Algonquin College.
                 <br>
                 <br>
-                I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s
-                Software Developer Boot Camp, and gained training and experience in the following web and programming
-                languages: HTML, CSS, JavaScript, SQL, C# and more.
+                It is a streaming services budget tracking web application. It was built in Ecplipse, utilizing
+                Apache Tomcat, Java Servlets,
+                Bootstrap, Animate.css and MySQl.
                 <br>
-                <br>I am a full-stack developer and would love to work with you on your project. <a
-                    href="#Contact">Contact</a> me below!
+                <br>A user has the ability to register as a new user and login with their password stored in a
+                database with a hashed format. The user manually enters subscription data, and a message appears in
+                required
+                if they are ober their set budget.
             </p>
         </div>
+    </div>
+
+    <!-- React section -->
+    <div class="Row" id="React">
+
+        <!-- Left column -->
+        <div class="Column_1">
+            <h1>React</h1>
+            <p>
+                This was a group project that was completed with two other developers enrolled at Lighthouse Labs.
+                <br>
+                <br>
+                It is a volunteer sign up and event listing web platform built in React, utilizing Tailwind CSS,
+                Animate.css, PostgreSQL and
+                the Google Calendar API.
+                <br>
+                <br>
+                A user has the ability to login, logout, sign up for events and delete events. They can also add events
+                to their Google Calendar.
+
+                You can check it out here <span style='font-weight:bold;'>&#8594;</span>
+                <a href="https://github.com/TomSpencer-Dev/action4all" target="_blank"
+                    style="text-decoration: none; color: #29ABE2; font-size:larger ">Github</a>
+            </p>
+        </div>
+
+        <!-- Right colomn -->
+        <div class="Column_2">
+            <div id="carouselExampleIndicators_2" class="carousel slide h-100" data-ride="carousel">
+
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 h-100" src="images/Action4AllLanding.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/Action4AllLoggedIn.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/Action4AllVolunteer.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/Action4AllSignedUp.png" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/Action4AllCalendarAPI.png" alt="Fifth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators_2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators_2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Android section -->
+    <div class="Row" id="Android">
+        <!-- Left colomn -->
+        <div class="Column_2" id="Android">
+            <div id="carouselExampleIndicators_3" class="carousel slide h-100" data-ride="carousel">
+
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 h-100" src="images/AndroidHome.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/AndroidDrawer.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/AndroidHelp.png" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/AndroidSearch.png" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/AndroidBus.png" alt="Fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 h-100" src="images/AndroidMylist.png" alt="Sixth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators_3" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators_3" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Right column -->
+        <div class="Column_1" id="Android">
+            <h1>Android</h1>
+            <p>
+                This was a final project I completed while attending Algonquin College.
+                <br>
+                <br>
+                It is a Guardian News lookup Android phone application. It was built in Android studio and utilizes such
+                features as ListView,
+                Guaradian News API, ToolBar, Drawer etc. SQLite is used for a database, and SharedPreferences is used to
+                store state.
+                <br>
+                <br>
+                A user has the ability to select a list of news articles from Guardian News based on the category
+                Business, Finance, or Current. They
+                can also do a keywoard search of articles. One can select articles to see more details, or select to add
+                it to their personal saved list.
+                The My List screen displays the articles the user has saved in their list and they can choose to delete
+                them from their list.
+
+                You can check it out here <span style='font-weight:bold;'>&#8594;</span>
+                <a href="https://github.com/TomSpencer-Dev/CST2335_Final_Project_Guardian_News_Article_Search"
+                    target="_blank" style="text-decoration: none; color: #29ABE2; font-size:larger ">Github</a>
+            </p>
+        </div>
+    </div>
+
+
+
     </div>
 
     <!-- GitHub section -->
@@ -214,10 +368,15 @@
         </p>
     </footer>
 
-    <!-- link to JavaScript document -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="JS/main.js"></script>
-    <script src="JS/game.js"></script>
+
+
+</body>
+<script src="JS/main.js"></script>
+
 
 </body>
 

@@ -218,6 +218,8 @@ body.fade-out {
     display: none;
 }
 
+
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -247,6 +249,8 @@ body.fade-out {
     margin: auto;
 }
 
+
+
 /* Images contained within slideshow */
 .Slide_Show_Images {
     vertical-align: middle;
@@ -270,6 +274,7 @@ body.fade-out {
     border-radius: 0 3px 3px 0;
     user-select: none;
     transition: 0.6s ease;
+    text-decoration: none;
 }
 
 /* Positioning the right-hand next button */
@@ -334,7 +339,7 @@ body.fade-out {
 }
 
 /* Fading animation for slideshow */
-.fade {
+.myFade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -353,7 +358,7 @@ body.fade-out {
     width: 50%;
     /* This ensures the column takes up half of the page width */
     padding: 1.6%;
-    height: 500px;
+    height: 600px;
     /* This sets the height of the column to 400px -  this may need to be adjusted depending on th text you enter */
     background-color: #f2f2f2;
     /* Sets the background color of the columns with class Column_1 */
@@ -370,8 +375,23 @@ body.fade-out {
     float: left;
     width: 50%;
     padding: 1.6%;
-    height: 500px;
-    background-color: #4d4d4d;
+    height: 600px;
+    background-color: transparent;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+    background-color: transparent;
+}
+
+.carousel-item img {
+    height: 100%;
+    /* Even though h-100 does this, repeating is safe */
+    width: 100%;
+    object-fit: contain;
+    /* This forces the image to fill the 500px height and crops the sides if necessary */
 }
 
 
@@ -438,8 +458,7 @@ q {
 
 /* Image elements */
 img {
-    filter: grayscale(75%);
-    /* This rids our pictures of 75% of their color */
+
     border-radius: 8px;
     /* Gives all images slightly rounded corners */
     max-width: 100%;
@@ -664,4 +683,8 @@ body {
     filter: blur(0);
     transition-duration: 0.3s;
     transition-delay: 0s;
+}
+
+#Android {
+    height: 800px;
 }
