@@ -472,6 +472,8 @@ img {
     display: block;
 }
 
+
+
 /* Center class hover effect - This only affects the quote, github link, and footer */
 /* .center:hover {
     transition: transform 2s; */
@@ -502,12 +504,19 @@ h1:hover {
     /* Makes the text no longer bold when hovered over */
 }
 
-/* Image element hover effects */
-.images2:hover {
-    transition: transform 1s;
-    /*Transition lasts 1 second */
-    transform: scale(1.05);
-    /* Image is increased slightly when hovered over */
+.images2:active {
+    transform: translate(4px, 4px);
+
+    box-shadow: none;
+
+}
+
+
+
+.images2 {
+    box-shadow: 5px 10px grey;
+    border: 1px solid black;
+
 }
 
 img:hover {
