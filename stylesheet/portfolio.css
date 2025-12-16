@@ -869,4 +869,9 @@ body {
     .Navbar a {
         display: none;
     }
+
+    .column p {
+        font-size: 5vw;
+        ;
+    }
 }
