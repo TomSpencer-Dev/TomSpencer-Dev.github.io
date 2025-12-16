@@ -390,7 +390,7 @@ body.fade-out {
     display: block;
     width: 100%;
     object-fit: contain;
-    height: 100%;
+    max-height: 500px;
 }
 
 
@@ -505,7 +505,6 @@ h1:hover {
 
 .images2:active {
     transform: translate(4px, 4px);
-
     box-shadow: none;
 
 }
@@ -515,6 +514,12 @@ h1:hover {
 .images2 {
     box-shadow: 5px 10px grey;
     border: 1px solid black;
+    margin: 5px;
+}
+
+#GitHub .column_2 {
+    padding: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -814,28 +819,36 @@ body {
     }
 
     .content-c {
-        order: 3;
-    }
-
-    .content-d {
-        order: 4;
-    }
-
-    .content-e {
-        order: 6;
-    }
-
-    .content-f {
         order: 5;
     }
 
-    .content-g {
+    .content-d {
+        order: 6;
+    }
+
+    .content-e {
         order: 8;
     }
 
-    .content-h {
+    .content-f {
         order: 7;
+    }
 
+    .content-g {
+        order: 10;
+    }
+
+    .content-h {
+        order: 9;
+
+    }
+
+    .content-i {
+        order: 4
+    }
+
+    .content-j {
+        order: 3;
     }
 
     .Video_Text {
@@ -871,13 +884,13 @@ body {
         display: none;
     }
 
-    .column p {
+    s .column p {
         font-size: 5vw;
         ;
     }
 
     #footer_1,
     #footer_2 {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 }
