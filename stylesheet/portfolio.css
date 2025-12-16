@@ -875,4 +875,9 @@ body {
         font-size: 5vw;
         ;
     }
+
+    #footer_1,
+    #footer_2 {
+        font-size: 3vw;
+    }
 }
