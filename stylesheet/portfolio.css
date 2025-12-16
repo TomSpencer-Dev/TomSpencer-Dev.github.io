@@ -710,6 +710,10 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
 
     .hamburger {
         position: fixed;
