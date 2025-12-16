@@ -1,5 +1,9 @@
 /***** GENERAL STYLING *****/
 /* Affects entire document */
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     /* This ensures that the page scrolling is smooth when the nav bar is clicked */
@@ -78,6 +82,7 @@ body.fade-out {
     animation: movenavText 5.75s;
     /* Applies the moveNavText animation for 5.75s */
     letter-spacing: .2vw;
+
 }
 
 /* moveNav animation effect for moving the nav bar in from the left of the screen */
@@ -108,14 +113,7 @@ body.fade-out {
     /* This lowers the navbar text onto the navbar */
 }
 
-/* Screens 576px and smaller will display navbar links equally distributed */
-@media screen and (max-width: 576px) {
-    .Navbar a {
-        width: 25%;
-        /* This makes each link take up 1/4 of the navbar */
-        font-size: 12px;
-    }
-}
+
 
 /* This animation effect causes the overlay video text to move down from the top of the page upon page load */
 @keyframes movevideoText {
@@ -183,12 +181,7 @@ body.fade-out {
     animation: zoominoutsinglefeatured 5s;
 }
 
-/* Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 576px) {
-    #Futuristic_Video {
-        display: none;
-    }
-}
+
 
 /*Texts over the video */
 .Video_Text {
@@ -353,45 +346,51 @@ body.fade-out {
     /* This creates a box with a border within which we will place most of our text */
 }
 
-.Column_1 {
-    float: left;
-    width: 50%;
-    /* This ensures the column takes up half of the page width */
-    padding: 1.6%;
-    height: 600px;
-    /* This sets the height of the column to 400px -  this may need to be adjusted depending on th text you enter */
+.column_1 {
     background-color: #f2f2f2;
-    /* Sets the background color of the columns with class Column_1 */
+    flex: 1;
+
 }
 
 /* Screens 576px and smaller display a scroll bar if the text overflows the column height */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     .Column_1 {
         overflow: auto;
     }
-}
+} */
 
-.Column_2 {
-    float: left;
-    width: 50%;
-    padding: 1.6%;
-    height: 600px;
+.column_2 {
+    flex: 1;
     background-color: transparent;
 }
 
 .carousel,
 .carousel-inner,
 .carousel-item {
-    height: 100%;
     background-color: transparent;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+
+
+}
+
+.carousel-item.active {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
 }
 
 .carousel-item img {
-    height: 100%;
-    /* Even though h-100 does this, repeating is safe */
+
+    margin: auto;
+    display: block;
     width: 100%;
     object-fit: contain;
-    /* This forces the image to fill the 500px height and crops the sides if necessary */
+    height: 100%;
 }
 
 
@@ -527,12 +526,12 @@ img:hover {
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     img {
         height: 100px;
         margin-top: 150px;
     }
-}
+} */
 
 
 /***** END OF TABLE STYLING *****/
@@ -625,7 +624,7 @@ button {
 }
 
 /* Hover effect for buttons */
-button:hover,
+.Pop_Up_Button:hover,
 .form-container .btn:hover {
     color: white;
     background-color: #87CEFA;
@@ -695,5 +694,175 @@ body {
 }
 
 #Android {
-    height: 800px;
+    height: auto;
+    overflow: visible;
+}
+
+.hamburger {
+    display: none;
+}
+
+#mobileNav {
+    display: none;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .hamburger {
+        position: fixed;
+        top: 15px;
+        width: 40px;
+        left: 20px;
+        z-index: 1001;
+        display: block;
+        background: white;
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+
+
+    }
+
+    #menu1 {
+        width: 15px;
+    }
+
+    #menu2 {
+        width: 10px;
+    }
+
+    #menu3 {
+        width: 5px;
+    }
+
+
+    .menu {
+        display: block;
+        height: 3px;
+        background-color: rgb(7, 7, 7);
+        margin: 3px 0;
+
+
+    }
+
+    #mobileNav {
+
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        background-color: #87CEFA;
+
+        z-index: 1000;
+
+
+        padding-top: 60px;
+
+        overflow-y: auto;
+
+    }
+
+
+    #mobileNav a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 5vw;
+
+    }
+
+
+    .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 36px;
+        color: white;
+
+
+    }
+
+    .Navbar a {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .content-a {
+        order: 2
+    }
+
+    .content-b {
+        order: 1;
+    }
+
+    .content-c {
+        order: 3;
+    }
+
+    .content-d {
+        order: 4;
+    }
+
+    .content-e {
+        order: 6;
+    }
+
+    .content-f {
+        order: 5;
+    }
+
+    .content-g {
+        order: 8;
+    }
+
+    .content-h {
+        order: 7;
+
+    }
+
+    .Video_Text {
+        height: auto;
+        padding-bottom: 2vh;
+
+    }
+
+
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .column {
+
+        flex: 1;
+
+        padding: 15px;
+        min-height: 1px;
+
+
+    }
+
+    .column h1 {
+        text-align: center;
+    }
+
+    .Navbar a {
+        display: none;
+    }
 }

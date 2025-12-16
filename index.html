@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
 </head>
 
@@ -25,7 +25,29 @@
         <a href="#Android">Android</a>
         <a href="#GitHub">GitHub</a>
         <a onclick="openForm()" ondblclick="closeForm()" href="#">Contact</a>
+
+        <button class="hamburger" onclick="openMenu()">
+            <span class="menu" id="menu1"></span>
+            <span class="menu" id="menu2"></span>
+            <span class="menu" id="menu3"></span>
+
+        </button>
     </div>
+
+
+    <div id="mobileNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        <a href="#Home" onclick="closeMenu()">Home</a>
+        <a href="#Slideshow" onclick="closeMenu()">Slideshow</a>
+        <a href="#Java" onclick="closeMenu()">Java</a>
+        <a href="#React" onclick="closeMenu()">React</a>
+        <a href="#Android" onclick="closeMenu()">Android</a>
+        <a href="#GitHub" onclick="closeMenu()">Github</a>
+    </div>
+
+
+
+
 
     <!-- Home -->
     <div id="Home">
@@ -131,9 +153,9 @@
 
 
     <!-- Java section -->
-    <div class="Row" id="Java">
+    <div class="row" id="Java">
         <!-- Left colomn -->
-        <div class="Column_2">
+        <div class="column_2 column content-a">
             <div id="carouselExampleIndicators_1" class="carousel slide h-100" data-ride="carousel">
 
                 <div class="carousel-inner h-100">
@@ -159,7 +181,7 @@
         </div>
 
         <!-- Right column -->
-        <div class="Column_1">
+        <div class="column_1 column content-b">
             <h1>Java Servlets</h1>
             <p>
                 This was a group project that was completed with two other developers enrolled at Algonquin College.
@@ -177,10 +199,10 @@
     </div>
 
     <!-- React section -->
-    <div class="Row" id="React">
+    <div class="row" id="React">
 
         <!-- Left column -->
-        <div class="Column_1">
+        <div class="column_1 column content-c">
             <h1>React</h1>
             <p>
                 This was a group project that was completed with two other developers enrolled at Lighthouse Labs.
@@ -201,7 +223,7 @@
         </div>
 
         <!-- Right colomn -->
-        <div class="Column_2">
+        <div class="column_2 column content-d">
             <div id="carouselExampleIndicators_2" class="carousel slide h-100" data-ride="carousel">
 
                 <div class="carousel-inner h-100">
@@ -236,9 +258,9 @@
     </div>
 
     <!-- Android section -->
-    <div class="Row" id="Android">
+    <div class="row" id="Android">
         <!-- Left colomn -->
-        <div class="Column_2" id="Android">
+        <div class="column_2 column content-e">
             <div id="carouselExampleIndicators_3" class="carousel slide h-100" data-ride="carousel">
 
                 <div class="carousel-inner h-100">
@@ -274,7 +296,7 @@
 
 
         <!-- Right column -->
-        <div class="Column_1" id="Android">
+        <div class="column_1 column content-f">
             <h1>Android</h1>
             <p>
                 This was a final project I completed while attending Algonquin College.
@@ -305,9 +327,9 @@
     </div>
 
     <!-- GitHub section -->
-    <div class="Row" id="GitHub">
+    <div class="row" id="GitHub">
         <!-- Left column -->
-        <div class="Column_1">
+        <div class="column_1 column content-g">
             <h1>GitHub</h1>
             <p class="center">You can view my coding projects on my GitHub profile here:<br>
                 <a href="https://github.com/TomSpencer-Dev/Development_Portfolio" target="_blank">Tom Spencer -
@@ -315,7 +337,7 @@
             </p>
         </div>
         <!-- Right column -->
-        <div class="Column_2">
+        <div class="column_2 column content-h">
             <a href="https://github.com/TomSpencer-Dev/Development_Portfolio" target="_blank"><img
                     src="images/GitHub.png" alt="GitHub Logo" class="images2"></a>
         </div>

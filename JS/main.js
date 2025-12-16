@@ -36,4 +36,13 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+function openMenu() {
+    document.getElementById("mobileNav").style.display = "block";
+}
+
+function closeMenu() {
+    document.getElementById("mobileNav").style.display = "none";
+}
+
+
 
