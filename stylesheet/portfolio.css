@@ -676,27 +676,37 @@ body {
 
 .welcome {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 200px;
     font-weight: bold;
     font-size: 3em;
     font-family: "Arial Rounded MT", "Arial", sans-serif;
+    max-width: 100%
+}
+
+.word {
+    display: inline-block;
+    white-space: nowrap;
 
 }
 
 .message {
+    display: inline-block;
     filter: blur(1rem);
     transition: filter 0.8s ease 2s;
+    cursor: default;
 }
 
-
-
-.message:hover {
-    filter: blur(0);
-    transition-duration: 0.3s;
-    transition-delay: 0s;
+@media (hover: hover) {
+    .message:hover {
+        filter: blur(0);
+        transition-duration: 0.3s;
+        transition-delay: 0s;
+    }
 }
+
 
 #Android {
     height: auto;
@@ -718,6 +728,18 @@ body {
     .carousel-control-prev,
     .carousel-control-next {
         display: none !important;
+    }
+
+    .message {
+        filter: blur(.5rem);
+        padding: 8px 3px;
+        letter-spacing: normal;
+    }
+
+
+    .message:active {
+        filter: blur(0);
+        transition-duration: 0.1s;
     }
 
     .hamburger {
