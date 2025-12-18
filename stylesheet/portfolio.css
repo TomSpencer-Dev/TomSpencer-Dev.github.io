@@ -442,10 +442,11 @@ p {
     padding-right: 5vw;
 }
 
+
 /* Anchor elements */
 a {
     color: blue;
-    /* This ensures all links are blue */
+    text-decoration: none;
 }
 
 /* Quotation elements */
@@ -927,9 +928,9 @@ body {
         display: none;
     }
 
-    s .column p {
+    .column p {
         font-size: 5vw;
-        ;
+
     }
 
     #footer_1,
